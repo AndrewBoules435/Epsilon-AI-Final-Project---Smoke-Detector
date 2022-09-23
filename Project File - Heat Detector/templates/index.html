@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel='stylesheet' href='static\styles\index.css' />
+
+    <title>Home Page</title>
+</head>
+
+
+<body>
+    <div class='header'>
+        <h1> Heat Detector App</h1>
+        <p> Prediction for fire alarm status (on or off)</p>
+    </div>
+
+    <div>
+        <form action="/predict" method="POST">
+            <label for="temp">temp</label><br>
+            <input type='number' step="0.1" id='temp' name='temp'><br><br>
+
+            <label for="Humidity">Humidity</label><br>
+            <input type='number' step="0.1" id='Humidity' name='Humidity'><br><br>
+
+            <label for="tvoc">tvoc</label><br />
+            <input type="number" step="0.1" id="tvoc" name="tvoc"><br><br>
+
+            <label for="co2">co2</label><br />
+            <input type="number" step="0.1" id="co2" name="co2"><br><br>
+
+            <label for="raw_h2o">raw_h2o</label><br />
+            <input type="number" step="0.1" id="raw_h2o" name="raw_h2o"><br><br>
+
+            <label for="raw_ethanol">raw_ethanol</label><br />
+            <input type="number" step="0.1" id="raw_ethanol" name="raw_ethanol"><br><br>
+
+            <label for="pressure_hpa">pressure_hpa</label><br />
+            <input type="number" step="0.1" id="pressure_hpa" name="pressure_hpa"><br><br>
+
+            <label for="pm_1">pm_1</label><br />
+            <input type="number" step="0.1" id="pm_1" name="pm_1"><br><br>
+
+            <label for="pm_2">pm_2</label><br />
+            <input type="number" step="0.1" id="pm_2" name="pm_2"><br><br>
+
+            <label for="nc_0">nc_0</label><br />
+            <input type="number" step="0.1" id="nc_0" name="nc_0"><br><br>
+
+            <label for="nc_1">nc_1</label><br />
+            <input type="number" step="0.1" id="nc_1" name="nc_1"><br><br>
+
+            <label for="nc_2">nc_2</label><br />
+            <input type="number" step="0.1" id="nc_2" name="nc_2"><br><br>
+
+            <label for="cnt">cnt</label><br />
+            <input type="number" step="0.1" id="cnt" name="cnt"><br><br>
+
+            </select><br><br>
+
+            <input type="Submit" value="Predict" />
+        </form>
+
+    </div>
+
+
+</body>
